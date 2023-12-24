@@ -44,19 +44,19 @@ body::-webkit-scrollbar {
 .menu {
   z-index: 2;
   position: absolute;
-  top: 25px;
-  left: 50px;
+  top: 30px;
+  left: 140px;
   font-family: "HakgyoansimBareondotumB";
 }
 
 .menu span {
-  margin-left: 13px;
+  margin-left: 23px;
 }
 
 .more {
   position: absolute;
   right: 50px;
-  top: 31px;
+  top: 30px;
   font-family: "HakgyoansimBareondotumB";
 }
 
@@ -65,9 +65,11 @@ body::-webkit-scrollbar {
 }
 
 .logo {
-  font-size: 26px;
+  position: relative;
+  font-size: 30px;
   color: red;
-  margin-right: 20px;
+  top: 20px;
+  left: 40px;
   font-family: "PyeongChangPeace-Bold";
 }
 
@@ -163,7 +165,7 @@ body::-webkit-scrollbar {
 
 .playplay {
   position: fixed;
-  top: 500px;
+  top: 530px;
   width: 250px;
   background-color: red;
   height: 23px;
@@ -230,4 +232,73 @@ body::-webkit-scrollbar {
 
 .papop {
   display: none;
+}
+
+/* Mobile - Portrait */
+@media (max-width: 575px) {
+  body {
+    width: 105vh;
+  }
+
+  .menu span {
+    display: none;
+  }
+
+  .logo {
+    top: 40px;
+    font-size: 46px;
+  }
+
+  .more {
+    right: -105%;
+  }
+  .mainPoster {
+    position: fixed;
+    top: -72px;
+    width: 100%;
+    height: 1600px;
+    -webkit-mask-image: linear-gradient(
+      #000 0%,
+      transparent 89%,
+      transparent 20%
+    );
+  }
+
+  .mainImage {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    top: 10%;
+  }
+  .info {
+    left: -30px;
+    top: 120%;
+  }
+
+  .playPage {
+    position: relative;
+    top: 20px;
+    width: 80vb;
+    padding: 120px;
+  }
+
+  .playImage {
+    position: relative;
+    width: 330px;
+  }
+
+  .playplay {
+    position: relative;
+    top: 20px;
+    width: 290px;
+    padding: 20px;
+    font-size: 25px;
+  }
+
+  .videoList {
+    position: absolute;
+    top: 750px;
+    left: 10%;
+    width: 100vh;
+  }
 }
